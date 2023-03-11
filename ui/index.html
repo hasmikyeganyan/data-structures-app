@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Assignments</title>
+</head>
+
+<body>
+  <div class="section">
+    <h2>Complexity Tasks</h2>
+    <label for="number">Task number</label><br />
+    <input type="number" name="number" id="number" max="7" />
+    <p><b>Complexity is:</b> <span class="result" id="comp-result"></span></p>
+    <button type="button" onclick="showComplexityResult()">Submit</button>
+  </div>
+
+  <div class="section">
+    <h2>Recursion</h2>
+    <label for="strings">Array of strings</label><br />
+    <input type="text" name="strings" id="strings" />
+    <p><b>Result is:</b> <span class="result" id="rec-result"></span></p>
+    <button class="submit" onclick="showRecursionResult()">Submit</button>
+  </div>
+
+  <div class=" section">
+    <h2>Binary Search</h2>
+    <label for="numbers">Array of numbers</label><br />
+    <input type="text" name="numbers" id="numbers" />
+    <br /><br />
+    <label for="range">Range</label><br />
+    <input type="text" name="range" id="range" />
+
+    <p><b>Result is:</b> <span class="result" id="bin-result"></span></p>
+    <button class="submit" onclick="showBinaryResult()">Submit</button>
+  </div>
+
+  <div class="section">
+    <h2>Data Structures</h2>
+    <label for="value">Value</label><br />
+    <input type="text" name="value" id="value" />
+    <br />
+    <br />
+    <div class="d-flex">
+      <button class="push-left" onclick="showStructuresResult('push_left')">Push Left</button>
+      <button class="push-right" onclick="showStructuresResult('push_right')">Push Right</button>
+    </div>
+
+    <p><b>Result:</b> <span class="result" id="struct-result"></span></p>
+
+    <div class="d-flex">
+      <button class="pop-left" onclick="showStructuresResult('pop_left')">Pop Left</button>
+      <button class="pop-right" onclick="showStructuresResult('pop_right')">Pop Right</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="binary.js"></script>
+  <script src="complexities.js"></script>
+  <script src="recursion.js"></script>
+  <script src="structures.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
